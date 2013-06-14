@@ -1,4 +1,3 @@
-
 http://kerotaa.github.io/archive.html
 http://kerotaa.github.io/atom.xml
 http://kerotaa.github.io/categories.html
@@ -7,6 +6,7 @@ http://kerotaa.github.io/pages.html
 http://kerotaa.github.io/rss.xml
 http://kerotaa.github.io/sitemap.txt
 http://kerotaa.github.io/tags.html
+http://kerotaa.github.io/category/雑記/atom.xml
+http://kerotaa.github.io/category/雑記/index.html
 http://kerotaa.github.io/archives/2013/06/index.html
-
-http://kerotaa.github.io/2013/06/10/hello-world
+http://kerotaa.github.io/%E9%9B%91%E8%A8%98/2013/06/10/hello-world
