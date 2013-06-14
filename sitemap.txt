@@ -1,0 +1,12 @@
+
+http://kerotaa.github.io/archive.html
+http://kerotaa.github.io/atom.xml
+http://kerotaa.github.io/categories.html
+http://kerotaa.github.io/index.html
+http://kerotaa.github.io/pages.html
+http://kerotaa.github.io/rss.xml
+http://kerotaa.github.io/sitemap.txt
+http://kerotaa.github.io/tags.html
+http://kerotaa.github.io/archives/2013/06/index.html
+
+http://kerotaa.github.io/2013/06/10/hello-world

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>Creataa</title>
+        <description>Web Design x Programming</description>
+        <link>http://kerotaa.github.io</link>
+        <link>http://kerotaa.github.io</link>
+        <lastBuildDate>2013-06-15T02:11:49+09:00</lastBuildDate>
+        <pubDate>2013-06-15T02:11:49+09:00</pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>Hello, World</title>
+                <description>&lt;p&gt;やっハロー &lt;span class=&quot;lsf&quot;&gt;wink&lt;/span&gt;&lt;/p&gt;
+</description>
+                <link>http://kerotaa.github.io/2013/06/10/hello-world</link>
+                <guid>http://kerotaa.github.io/2013/06/10/hello-world</guid>
+                <pubDate>2013-06-10T00:00:00+09:00</pubDate>
+        </item>
+
+
+</channel>
+</rss>
