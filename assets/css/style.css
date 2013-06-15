@@ -396,6 +396,11 @@ body {
   border-color: #3f4953;
 }
 
+body.single #content {
+  width: 100%;
+  max-width: none;
+  padding: 0;
+}
 body.single #main {
   display: block;
   float: none;
@@ -403,12 +408,43 @@ body.single #main {
   margin: 0;
   padding-right: 0;
   border-right: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  *zoom: 1;
+  max-width: 78.5em;
+  _width: 78.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+body.single #main:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 body.single #side {
   display: block;
   float: none;
   width: auto;
   margin: 0;
+  padding: 2em 0;
+  background-color: #f9f9f9;
+}
+body.single #side .container {
+  *zoom: 1;
+  max-width: 78.5em;
+  _width: 78.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+body.single #side .container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .post-body {
@@ -859,6 +895,12 @@ a:hover, a:active {
   float: left;
 }
 
+.post-single .post-header {
+  margin-bottom: 1.5em;
+}
+.post-single .post-body p {
+  max-width: 43em;
+}
 .post-single .post-meta {
   font-size: 0.75em;
   overflow: hidden;
@@ -1453,6 +1495,12 @@ a:hover, a:active {
 }
 
 @media screen and (max-width: 768px) {
+  #content {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+
   #main {
     display: block;
     float: none;
@@ -1460,6 +1508,21 @@ a:hover, a:active {
     margin: 0;
     padding-right: 0;
     border-right: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    *zoom: 1;
+    max-width: 78.5em;
+    _width: 78.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #main:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   #side {
@@ -1467,6 +1530,23 @@ a:hover, a:active {
     float: none;
     width: auto;
     margin: 0;
+    padding: 2em 0;
+    background-color: #f9f9f9;
+  }
+
+  #side .container {
+    *zoom: 1;
+    max-width: 78.5em;
+    _width: 78.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #side .container:after {
+    content: "";
+    display: table;
+    clear: both;
   }
 
   #site-header {
