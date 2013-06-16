@@ -1,4 +1,3 @@
-guard 'coffeescript', :input => '_coffeescript', :output => 'js'
 
 guard 'compass', :project_path => '.', :configuration_file => './config.rb' do
 	watch('^_sass/(.*)\.s[ac]ss')
