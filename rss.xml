@@ -5,8 +5,8 @@
         <description>Web x Design x Programming x Life</description>
         <link>http://kerotaa.github.io</link>
         <link>http://kerotaa.github.io</link>
-        <lastBuildDate>2013-06-16T18:37:05+09:00</lastBuildDate>
-        <pubDate>2013-06-16T18:37:05+09:00</pubDate>
+        <lastBuildDate>2013-06-16T20:31:50+09:00</lastBuildDate>
+        <pubDate>2013-06-16T20:31:50+09:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -51,8 +51,8 @@
 &lt;p&gt;生成されるファイルへの書き込み部分をオーバーライド。&lt;br&gt;
 &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;の中では空行を使いたい場合が多々あるので正規表現で分割して偶数要素だけに処理を施して結合してます。  &lt;code&gt;&amp;lt;xmp&amp;gt;&lt;/code&gt;は無視しちゃってるけど使う人いないよね・・・？&lt;/p&gt;
 </description>
-                <link>http://kerotaa.github.io/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/2013/06/16/jekyll-remove-empty-lines</link>
-                <guid>http://kerotaa.github.io/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/2013/06/16/jekyll-remove-empty-lines</guid>
+                <link>http://kerotaa.github.io/programming/2013/06/16/jekyll-remove-empty-lines</link>
+                <guid>http://kerotaa.github.io/programming/2013/06/16/jekyll-remove-empty-lines</guid>
                 <pubDate>2013-06-16T00:00:00+09:00</pubDate>
         </item>
 
@@ -65,8 +65,8 @@ Jekyllでブログ作ってみたよ！&lt;/p&gt;
 
 &lt;p&gt;なるべく長く続けていけたらと思います。よろしくお願いします。&lt;/p&gt;
 </description>
-                <link>http://kerotaa.github.io/%E9%9B%91%E8%A8%98/2013/06/10/hello-world</link>
-                <guid>http://kerotaa.github.io/%E9%9B%91%E8%A8%98/2013/06/10/hello-world</guid>
+                <link>http://kerotaa.github.io/diary/2013/06/10/hello-world</link>
+                <guid>http://kerotaa.github.io/diary/2013/06/10/hello-world</guid>
                 <pubDate>2013-06-10T00:00:00+09:00</pubDate>
         </item>
 
