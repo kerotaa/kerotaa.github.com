@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello, World - Creataa</title>
+    <title>[jekyll] Markdownのコードブロックをhighlightタグに変換するプラグイン - Creataa</title>
     <meta name="author" content="kerotaa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,23 +49,50 @@
       <div id="main">
 <article class="post post-single">
   <header class="post-header">
-    <h1 class="post-title">Hello, World</h1>
+    <h1 class="post-title">[jekyll] Markdownのコードブロックをhighlightタグに変換するプラグイン</h1>
     <ul class="post-meta">
       <li class="post-date">
-        <time datetime="2013-06-10T00:00:00+09:00">10 June, 2013</time>
+        <time datetime="2013-06-16T23:21:43+09:00">16 June, 2013</time>
       </li>
       <li class="post-category">
         <ul>
-          <li><a href="http://kerotaa.github.io/category/diary/" title="雑記">雑記</a></li>
+          <li><a href="http://kerotaa.github.io/category/programming/" title="プログラミング">プログラミング</a></li>
+        </ul>
+      </li>
+      <li class="post-tag">
+        <ul>
+          <li><a href="http://kerotaa.github.io/tag/jekyll/" title="jekyll">jekyll</a></li>
+          <li><a href="http://kerotaa.github.io/tag/Ruby/" title="Ruby">Ruby</a></li>
         </ul>
       </li>
     </ul>
   </header>
   <div class="post-body">
-<p>やっハロー <span class="lsf">wink</span><br>
-Jekyllでブログ作ってみたよ！</p>
+<p>jekyllでソースコードを掲載するとき、
+<em>highlight</em>タグを使用する人が多いと思うんだけど、
+<code>{% highlight ruby %}...{% endhighlight %}</code>とか書くのがめんどすぎるので、Markdownのコードブロックを<em>highlight</em>タグに変換してくれるプラグインを書きました。</p>
 <!--more-->
-<p>なるべく長く続けていけたらと思います。よろしくお願いします。</p>
+<h3>ソースコード</h3>
+<p><a href="https://gist.github.com/kerotaa/5792211">md-code-block-highlight.rb</a></p>
+<div class="highlight"><pre><code class="ruby"><span class="k">module</span> <span class="nn">Jekyll</span>
+  <span class="k">module</span> <span class="nn">Convertible</span>
+    <span class="k">alias</span> <span class="ss">:origin_render_liquid</span> <span class="ss">:render_liquid</span>
+    <span class="k">def</span> <span class="nf">render_liquid</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">payload</span><span class="p">,</span> <span class="n">info</span><span class="p">)</span>
+      <span class="n">content</span><span class="o">.</span><span class="n">gsub!</span><span class="p">(</span><span class="sr">/(?:^|\n)```(\w*)\n(.*\n)```\n/m</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">text</span><span class="o">|</span>
+        <span class="vg">$1</span><span class="o">.</span><span class="n">empty?</span> <span class="p">?</span> <span class="n">text</span> <span class="p">:</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">{% highlight </span><span class="si">#{</span><span class="vg">$1</span><span class="si">}</span><span class="s2"> %}</span><span class="se">\n</span><span class="si">#{</span><span class="vg">$2</span><span class="si">}</span><span class="s2">{% endhighlight %}&quot;</span>
+      <span class="k">end</span>
+      <span class="n">origin_render_liquid</span><span class="p">(</span><span class="n">content</span><span class="p">,</span> <span class="n">payload</span><span class="p">,</span> <span class="n">info</span><span class="p">)</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div>
+<h3>説明</h3>
+<p>これで</p>
+<div class="highlight">
+<pre><code>```ruby
+puts "Hello, World!"
+```</code></pre></div>
+<p>とか書くと内部で<em>highlight</em>タグに変換してくれます<span class="lsf">smile</span></p>
   </div>
   <footer class="post-footer">
   <div id="disqus_thread"></div>
@@ -83,8 +110,8 @@ Jekyllでブログ作ってみたよ！</p>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
     <nav class="pagination">
       <ul>
-        <li class="prev disabled"><a>&larr;&nbsp;Previous</a></li>
-        <li class="next"><a href="/programming/2013/06/16/jekyll-remove-empty-lines-html/" title="[jekyll] 生成されるHTMLから空行を取り除くプラグイン">Next&nbsp;&rarr;</a></li>
+        <li class="prev"><a href="/programming/2013/06/16/jekyll-category-slug-to-name-filter/" title="[jekyll] 英語名カテゴリーを日本語表記に変換するフィルター">&larr;&nbsp;Previous</a></li>
+        <li class="next disabled"><a>Next&nbsp;&rarr;</a></li>
       </ul>
     </nav>
   </footer>

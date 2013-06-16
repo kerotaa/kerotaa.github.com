@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello, World - Creataa</title>
+    <title>[jekyll] 英語名カテゴリーを日本語表記に変換するフィルター - Creataa</title>
     <meta name="author" content="kerotaa">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,23 +49,48 @@
       <div id="main">
 <article class="post post-single">
   <header class="post-header">
-    <h1 class="post-title">Hello, World</h1>
+    <h1 class="post-title">[jekyll] 英語名カテゴリーを日本語表記に変換するフィルター</h1>
     <ul class="post-meta">
       <li class="post-date">
-        <time datetime="2013-06-10T00:00:00+09:00">10 June, 2013</time>
+        <time datetime="2013-06-16T21:37:12+09:00">16 June, 2013</time>
       </li>
       <li class="post-category">
         <ul>
-          <li><a href="http://kerotaa.github.io/category/diary/" title="雑記">雑記</a></li>
+          <li><a href="http://kerotaa.github.io/category/programming/" title="プログラミング">プログラミング</a></li>
+        </ul>
+      </li>
+      <li class="post-tag">
+        <ul>
+          <li><a href="http://kerotaa.github.io/tag/jekyll/" title="jekyll">jekyll</a></li>
+          <li><a href="http://kerotaa.github.io/tag/Ruby/" title="Ruby">Ruby</a></li>
         </ul>
       </li>
     </ul>
   </header>
   <div class="post-body">
-<p>やっハロー <span class="lsf">wink</span><br>
-Jekyllでブログ作ってみたよ！</p>
+<p>Github PagesではURLに日本語が含まれているとファイルにアクセスできない場合があるので、カテゴリーを日本語にすると悲劇が起きることがあります<span class="lsf">frustrate</span></p>
 <!--more-->
-<p>なるべく長く続けていけたらと思います。よろしくお願いします。</p>
+<p>そこで、フィルターで英語→日本語に変換して表示してやると解決できました。</p>
+<h3>ソースコード</h3>
+<h5><a href="https://gist.github.com/kerotaa/5791927">slug2name.rb</a></h5>
+<div class="highlight"><pre><code class="ruby"><span class="k">module</span> <span class="nn">Jekyll</span>
+    <span class="k">module</span> <span class="nn">Slug2Name</span>
+        <span class="k">def</span> <span class="nf">slug2name</span><span class="p">(</span><span class="n">input</span><span class="p">)</span>
+        <span class="n">slug</span> <span class="o">=</span> <span class="vi">@context</span><span class="o">.</span><span class="n">registers</span><span class="o">[</span><span class="ss">:site</span><span class="o">].</span><span class="n">config</span><span class="o">[</span><span class="s1">&#39;category_slugs&#39;</span><span class="o">][</span><span class="n">input</span><span class="o">]</span>
+        <span class="n">slug</span> <span class="p">?</span> <span class="n">slug</span> <span class="p">:</span> <span class="n">input</span>
+    <span class="k">end</span>
+    <span class="k">end</span>
+<span class="k">end</span>
+<span class="ss">Liquid</span><span class="p">:</span><span class="ss">:Template</span><span class="o">.</span><span class="n">register_filter</span><span class="p">(</span><span class="ss">Jekyll</span><span class="p">:</span><span class="ss">:Slug2Name</span><span class="p">)</span>
+</code></pre></div>
+<h5>_config.yml</h5>
+<div class="highlight"><pre><code class="ruby"><span class="n">category_slugs</span><span class="p">:</span>
+    <span class="ss">programming</span><span class="p">:</span> <span class="s2">&quot;プログラミング&quot;</span>
+    <span class="ss">diary</span><span class="p">:</span> <span class="s2">&quot;日記&quot;</span>
+</code></pre></div>
+<h5>Example</h5>
+<div class="highlight"><pre><code class="html"><span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">&quot;/category/{{ category }}/&quot;</span><span class="nt">&gt;</span>{{ category | slug2name }}<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+</code></pre></div>
   </div>
   <footer class="post-footer">
   <div id="disqus_thread"></div>
@@ -83,8 +108,8 @@ Jekyllでブログ作ってみたよ！</p>
 <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
     <nav class="pagination">
       <ul>
-        <li class="prev disabled"><a>&larr;&nbsp;Previous</a></li>
-        <li class="next"><a href="/programming/2013/06/16/jekyll-remove-empty-lines-html/" title="[jekyll] 生成されるHTMLから空行を取り除くプラグイン">Next&nbsp;&rarr;</a></li>
+        <li class="prev"><a href="/programming/2013/06/16/jekyll-remove-empty-lines-html/" title="[jekyll] 生成されるHTMLから空行を取り除くプラグイン">&larr;&nbsp;Previous</a></li>
+        <li class="next"><a href="/programming/2013/06/16/jekyll-md-code-block-highlight-tag/" title="[jekyll] Markdownのコードブロックをhighlightタグに変換するプラグイン">Next&nbsp;&rarr;</a></li>
       </ul>
     </nav>
   </footer>
