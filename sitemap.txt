@@ -18,5 +18,5 @@ http://kerotaa.github.io/tag/Ruby/atom.xml
 http://kerotaa.github.io/tag/Ruby/index.html
 http://kerotaa.github.io/archives/2013/06/index.html
 
-http://kerotaa.github.io/programming/2013/06/16/jekyll-remove-empty-lines
+http://kerotaa.github.io/programming/2013/06/16/jekyll-remove-empty-lines-html
 http://kerotaa.github.io/diary/2013/06/10/hello-world

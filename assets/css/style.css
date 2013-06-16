@@ -319,6 +319,7 @@ table {
   -o-font-smoothing: antialiased;
   font-smoothing: antialiased;
   width: 1em;
+  height: 1em;
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;

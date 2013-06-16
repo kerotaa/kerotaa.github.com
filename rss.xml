@@ -5,8 +5,8 @@
         <description>Web x Design x Programming x Life</description>
         <link>http://kerotaa.github.io</link>
         <link>http://kerotaa.github.io</link>
-        <lastBuildDate>2013-06-16T20:31:50+09:00</lastBuildDate>
-        <pubDate>2013-06-16T20:31:50+09:00</pubDate>
+        <lastBuildDate>2013-06-16T21:11:16+09:00</lastBuildDate>
+        <pubDate>2013-06-16T21:11:16+09:00</pubDate>
         <ttl>1800</ttl>
 
 
@@ -51,8 +51,8 @@
 &lt;p&gt;生成されるファイルへの書き込み部分をオーバーライド。&lt;br&gt;
 &lt;code&gt;&amp;lt;pre&amp;gt;&lt;/code&gt;の中では空行を使いたい場合が多々あるので正規表現で分割して偶数要素だけに処理を施して結合してます。  &lt;code&gt;&amp;lt;xmp&amp;gt;&lt;/code&gt;は無視しちゃってるけど使う人いないよね・・・？&lt;/p&gt;
 </description>
-                <link>http://kerotaa.github.io/programming/2013/06/16/jekyll-remove-empty-lines</link>
-                <guid>http://kerotaa.github.io/programming/2013/06/16/jekyll-remove-empty-lines</guid>
+                <link>http://kerotaa.github.io/programming/2013/06/16/jekyll-remove-empty-lines-html</link>
+                <guid>http://kerotaa.github.io/programming/2013/06/16/jekyll-remove-empty-lines-html</guid>
                 <pubDate>2013-06-16T00:00:00+09:00</pubDate>
         </item>
 
