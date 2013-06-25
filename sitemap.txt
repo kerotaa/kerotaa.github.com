@@ -21,8 +21,12 @@ http://kerotaa.github.io/tag/AppleScript/atom.xml
 http://kerotaa.github.io/tag/AppleScript/index.html
 http://kerotaa.github.io/tag/Mac/atom.xml
 http://kerotaa.github.io/tag/Mac/index.html
-http://kerotaa.github.io/tag/JavaScript,jQuery,UI/atom.xml
-http://kerotaa.github.io/tag/JavaScript,jQuery,UI/index.html
+http://kerotaa.github.io/tag/JavaScript/atom.xml
+http://kerotaa.github.io/tag/JavaScript/index.html
+http://kerotaa.github.io/tag/jQuery/atom.xml
+http://kerotaa.github.io/tag/jQuery/index.html
+http://kerotaa.github.io/tag/UI/atom.xml
+http://kerotaa.github.io/tag/UI/index.html
 http://kerotaa.github.io/archives/2013/06/page2/index.html
 http://kerotaa.github.io/archives/2013/06/index.html
 
