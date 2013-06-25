@@ -8,6 +8,7 @@ http://kerotaa.github.io/pages.html
 http://kerotaa.github.io/rss.xml
 http://kerotaa.github.io/sitemap.txt
 http://kerotaa.github.io/tags.html
+http://kerotaa.github.io/page2/index.html
 http://kerotaa.github.io/category/diary/atom.xml
 http://kerotaa.github.io/category/diary/index.html
 http://kerotaa.github.io/category/programming/atom.xml
@@ -20,8 +21,12 @@ http://kerotaa.github.io/tag/AppleScript/atom.xml
 http://kerotaa.github.io/tag/AppleScript/index.html
 http://kerotaa.github.io/tag/Mac/atom.xml
 http://kerotaa.github.io/tag/Mac/index.html
+http://kerotaa.github.io/tag/JavaScript,jQuery,UI/atom.xml
+http://kerotaa.github.io/tag/JavaScript,jQuery,UI/index.html
+http://kerotaa.github.io/archives/2013/06/page2/index.html
 http://kerotaa.github.io/archives/2013/06/index.html
 
+http://kerotaa.github.io/programming/2013/06/26/created-jquery-expand-search
 http://kerotaa.github.io/programming/2013/06/18/jekyll-newpost-applescript
 http://kerotaa.github.io/programming/2013/06/16/jekyll-md-code-block-highlight-tag
 http://kerotaa.github.io/programming/2013/06/16/jekyll-category-slug-to-name-filter

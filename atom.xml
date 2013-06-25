@@ -4,13 +4,28 @@
  <title>Creataa</title>
  <link href="http://kerotaa.github.io/" rel="self"/>
  <link href="http://kerotaa.github.io"/>
- <updated>2013-06-18T03:30:55+09:00</updated>
+ <updated>2013-06-26T03:05:21+09:00</updated>
  <id>http://kerotaa.github.io</id>
  <author>
    <name>kerotaa</name>
    <email>kerotaa@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>検索フォームを良い感じにするjQuery Expand Searchを作りました</title>
+   <link href="http://kerotaa.github.io/programming/2013/06/26/created-jquery-expand-search"/>
+   <updated>2013-06-26T02:04:26+09:00</updated>
+   <id>http://kerotaa.github.io/programming/2013/06/26/created-jquery-expand-search</id>
+   <content type="html">&lt;p&gt;良い感じのUIを見つけたのでjQueryプラグインを使ってマネてみました。&lt;br&gt;
+検索フォームにフォーカスを合わせるとフォームを全画面表示します。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://github.com/kerotaa/jquery.expand-search.js/&quot;&gt;リポジトリ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://kerotaa.github.io/jquery.expand-search.js/&quot;&gt;デモページ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>[jekyll] AppleScriptで新規投稿を楽にしてみた</title>
@@ -144,7 +159,7 @@
   &lt;span class=&quot;k&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;Convertible&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;alias&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:origin_render_liquid&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:render_liquid&lt;/span&gt;
     &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;render_liquid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gsub!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/(?:^|\n)```(\w*)\n(.*\n)```\n/m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gsub!&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/(?:^|\n)```(\w*)\n(.*?\n)```\n/m&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
         &lt;span class=&quot;vg&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;empty?&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;?&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;{% highlight &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; %}&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vg&quot;&gt;$2&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;{% endhighlight %}&amp;quot;&lt;/span&gt;
       &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
       &lt;span class=&quot;n&quot;&gt;origin_render_liquid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;info&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -163,6 +178,10 @@ puts &quot;Hello, World!&quot;
 ```&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;とか書くと内部で&lt;em&gt;highlight&lt;/em&gt;タグに変換してくれます&lt;span class=&quot;lsf&quot;&gt;smile&lt;/span&gt;&lt;/p&gt;
+
+&lt;h3&gt;追記（2013-06-26）&lt;/h3&gt;
+
+&lt;p&gt;プログラムに一部誤りがあったので修正しました。&lt;/p&gt;
 </content>
  </entry>
  
