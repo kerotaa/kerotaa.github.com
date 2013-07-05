@@ -5,10 +5,30 @@
         <description>Web x Design x Programming x Life</description>
         <link>http://kerotaa.github.io</link>
         <link>http://kerotaa.github.io</link>
-        <lastBuildDate>2013-06-26T03:07:54+09:00</lastBuildDate>
-        <pubDate>2013-06-26T03:07:54+09:00</pubDate>
+        <lastBuildDate>2013-07-05T23:46:14+09:00</lastBuildDate>
+        <pubDate>2013-07-05T23:46:14+09:00</pubDate>
         <ttl>1800</ttl>
 
+
+        <item>
+                <title>FeedlyとPocketの連携を便利にするショートカットキーを設定する</title>
+                <description>&lt;p&gt;以前のブログの記事「&lt;a href=&quot;http://kerotaa.hateblo.jp/entry/2013/05/25/170226&quot;&gt;Feedlyで選択中の記事をPocketに追加するショートカットキーを設定する&lt;/a&gt;」が好評みたいなんだけど、もう１つ良い感じのものが出来たので合わせて紹介します。&lt;/p&gt;
+
+&lt;!--more--&gt;
+
+&lt;p&gt;どちらも&lt;a href=&quot;https://chrome.google.com/webstore/detail/shortcut-manager/mgjjeipcdnnjhgodgjpfkffcejoljijf&quot;&gt;Shortcut Manager&lt;/a&gt;用のプログラムです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://kerotaa.github.io/feedly-utilities/pocket/add-selected-article/&quot;&gt;選択中の記事をPocketに追加&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://kerotaa.github.io/feedly-utilities/pocket/add-all-articles-currentry-displayed/&quot;&gt;表示中の記事全てをPocketに追加&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://kerotaa.github.io/feedly-utilities/pocket/add-all-articles-currentry-displayed/&quot;&gt;表示中の記事全てをPocketに追加&lt;/a&gt;するほうは追加した後にSaved For Laterされてた場合は解除しますので、気になる記事をどんどんSaved For Laterしてって最後にSaved For Laterのページでショートカットキーを押せばPocketに一括で追加されてSaved For Laterもスッキリするっていう寸法です。&lt;/p&gt;
+</description>
+                <link>http://kerotaa.github.io/programming/2013/07/05/post-feedly-utilities</link>
+                <guid>http://kerotaa.github.io/programming/2013/07/05/post-feedly-utilities</guid>
+                <pubDate>2013-07-05T23:08:17+09:00</pubDate>
+        </item>
 
         <item>
                 <title>検索フォームを良い感じにするjQuery Expand Searchを作りました</title>

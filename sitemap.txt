@@ -13,6 +13,7 @@ http://kerotaa.github.io/category/diary/atom.xml
 http://kerotaa.github.io/category/diary/index.html
 http://kerotaa.github.io/category/programming/atom.xml
 http://kerotaa.github.io/category/programming/index.html
+http://kerotaa.github.io/category/programming/page2/index.html
 http://kerotaa.github.io/tag/jekyll/atom.xml
 http://kerotaa.github.io/tag/jekyll/index.html
 http://kerotaa.github.io/tag/Ruby/atom.xml
@@ -27,9 +28,17 @@ http://kerotaa.github.io/tag/jQuery/atom.xml
 http://kerotaa.github.io/tag/jQuery/index.html
 http://kerotaa.github.io/tag/UI/atom.xml
 http://kerotaa.github.io/tag/UI/index.html
+http://kerotaa.github.io/tag/Feedly/atom.xml
+http://kerotaa.github.io/tag/Feedly/index.html
+http://kerotaa.github.io/tag/Pocket/atom.xml
+http://kerotaa.github.io/tag/Pocket/index.html
+http://kerotaa.github.io/tag/ShortcutManager/atom.xml
+http://kerotaa.github.io/tag/ShortcutManager/index.html
 http://kerotaa.github.io/archives/2013/06/page2/index.html
 http://kerotaa.github.io/archives/2013/06/index.html
+http://kerotaa.github.io/archives/2013/07/index.html
 
+http://kerotaa.github.io/programming/2013/07/05/post-feedly-utilities
 http://kerotaa.github.io/programming/2013/06/26/created-jquery-expand-search
 http://kerotaa.github.io/programming/2013/06/18/jekyll-newpost-applescript
 http://kerotaa.github.io/programming/2013/06/16/jekyll-md-code-block-highlight-tag
